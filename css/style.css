@@ -1,0 +1,75 @@
+#inner-container{
+    width: 100%;
+    transition: 0.1s ease-in-out;
+}
+#form-box{
+    padding: 20px;
+    width: 100%;
+    transition: 1s ease-in-out;
+    border-radius: 5px 5px 0 0;
+}
+#input-field{
+    position: relative;
+    border-radius: 5px 0 0 0;
+    z-index: 1;
+    border-bottom: none;
+}
+#input-field:focus + #input-label{
+    bottom: 68px;
+    color: #868e96;
+    font-size: 20px;
+}
+#input-field:valid + #input-label{
+    bottom: 68px;
+    color: #868e96;
+    font-size: 20px;
+}
+#input-label{
+    position: absolute;
+    font-size: 25px;
+    left: 32px;
+    margin-bottom: 0;
+    bottom: 5px;
+    color: #868e96 ;
+    pointer-events: none;
+    transition: 0.5s ease-in-out;
+    z-index: 2;
+}
+#input-progress{
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 45px;
+    border-radius: 0 0 5px 5px;
+    border-bottom: 4px solid #007bff;
+    transition: width 0.5s ease-in-out;
+}
+/*btn*/
+#next-btn{
+    border-radius: 0 5px 0 0 !important;
+    cursor: pointer;
+    color: #007bff ;
+    border-bottom: none;
+}
+#prev-btn{
+    cursor: pointer;
+    color: #868e96 ;
+}
+/* progress */
+.progress{
+    width: 100%;
+    border-radius: 0 0 5px 5px;
+    transition: 1s ease-in-out;
+}
+#progress-bar{
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+@media (max-width: 410px) {
+    #input-label{
+        font-size: 20px;
+    }
+    #inner-container{
+        width: 410px;
+    }
+}

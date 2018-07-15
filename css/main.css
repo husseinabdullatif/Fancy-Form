@@ -1,0 +1,15 @@
+.form-complete #form-box {
+  width: 0;
+  padding: 0;
+}
+.form-complete #input-field, .form-complete #input-progress, .form-complete #prev-btn, .form-complete #next-btn, .form-complete #input-label {
+  visibility: hidden;
+}
+.form-complete .progress {
+  width: 0;
+}
+.form-complete #progress-bar {
+  transition: 0.2s width ease-in-out;
+}
+
+/*# sourceMappingURL=main.css.map */
